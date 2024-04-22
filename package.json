@@ -1,11 +1,11 @@
 {
-  "name": "SPECIFY-2.0",
+  "name": "specify-2.0",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/SPECIFY-2.0/",
+    "build": "vite build --base=/specify-2.0/",
     "preview": "vite preview"
   },
   "devDependencies": {
