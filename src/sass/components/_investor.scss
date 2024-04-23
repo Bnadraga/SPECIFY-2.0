@@ -6,6 +6,11 @@
 }
 .investor__svg {
   fill: $secondaryTextColor;
+  transition-duration: 350ms;
+}
+.investor__svg:hover,
+.investor__svg:focus {
+  fill: $borderColor;
 }
 .investor__text {
   font-weight: 500;
