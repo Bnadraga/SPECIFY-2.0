@@ -4,7 +4,7 @@
       <div class="mobile-wrap">
         <a class="mobile-logo" href="/index.html">
           <svg width="82px" height="24px">
-            <use href="../img/symbol-defs.svg#icon-logo"></use>
+            <use href="./img/symbol-defs.svg#icon-logo"></use>
           </svg>
         </a>
         <button
@@ -13,9 +13,11 @@
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg class="header-svg" width="23px" height="14px">
-            <use href="../img/symbol-defs.svg#icon-open-menu"></use>
-          </svg>
+        <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1H22" stroke="white" stroke-width="2" stroke-linecap="round" />
+          <path d="M1 8H22" stroke="white" stroke-width="2" stroke-linecap="round" />
+          <path d="M1 15H22" stroke="white" stroke-width="2" stroke-linecap="round" />
+        </svg>
         </button>
       </div>
       <div class="menu-container js-menu-container">
@@ -28,8 +30,9 @@
             </a>
           </div>
           <button class="menu-button-close js-close-menu">
-            <svg class="header-svg">
-              <use href="./img/symbol-defs.svg#icon-close-menu"></use>
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 16L16 1" stroke="white" stroke-width="2" stroke-linecap="round" />
+              <path d="M16 16L1 1" stroke="white" stroke-width="2" stroke-linecap="round" />
             </svg>
           </button>
         </div>
@@ -123,9 +126,11 @@
                   id="password"
                   placeholder="Password"
                 />
-                <svg class="modal__eye" width="20px" height="20px">
-                  <use href="./img/symbol-defs.svg#icon-eye"></use>
-                </svg>
+                <a href="#">
+                  <svg class="modal__eye" width="20px" height="20px">
+                    <use href="./img/symbol-defs.svg#icon-eye"></use>
+                  </svg>
+                </a>
               </div>
             </div>
             <button id="submit" type="submit" class="modal__button">
