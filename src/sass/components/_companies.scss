@@ -8,6 +8,9 @@
   &__info-wrap {
     padding-top: 50px;
   }
+  &__icon-wrap {
+    display: flex;
+  }
   &__logo {
     fill: $secondaryTextColor;
     margin-bottom: 40px;
@@ -39,5 +42,19 @@
     font-size: 15px;
     line-height: 151%;
     color: $cardTextColor;
+    align-items: center;
+  }
+  &__btn-icon-wrap {
+    width: 20px;
+    height: 20px;
+    background-color: $cardTextColor;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 9px;
+  }
+  &__btn-icon {
+    fill: $secondaryTextColor;
   }
 }
