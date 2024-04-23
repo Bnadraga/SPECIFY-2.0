@@ -59,6 +59,15 @@
   border: 1px solid $borderColor;
   padding: 12px 20px;
   border-radius: 8px;
+  transition-duration: 350ms;
+}
+.hero__first-button:hover,
+.hero__first-button:focus{
+  color: $secondaryTextColor;
+  border: 1px solid $borderColor;
+  background: none;
+  background-color: $cardTextColor;
+  box-shadow: none;
 }
 .hero__second-button {
   font-weight: 600;
@@ -75,6 +84,15 @@
   align-items: center;
   margin-top: 10px;
   padding-right: 20px;
+  transition-duration: 350ms;
+}
+.hero__second-button:hover,
+.hero__second-button:focus{
+  color: $secondaryTextColor;
+  box-shadow: inset 0 2px 0 0 rgba(255, 255, 255, 0.2),
+    inset 0 -1px 0 1px rgba(0, 0, 0, 0.25), 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+  background: linear-gradient(180deg, #7c6ce4 0%, #624de3 100%);
+  border: 1px solid $borderColor;
 }
 .hero__arrow {
   fill: $secondaryTextColor;
