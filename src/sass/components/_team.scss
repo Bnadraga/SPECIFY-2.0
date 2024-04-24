@@ -17,28 +17,29 @@
     text-align: center;
     color: $mainTextColor;
     max-width: 290px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  &__btn-list{
+  &__btn-list {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  &__btn-item{
+  &__btn-item {
     margin-top: 15px;
   }
   &__btn-purple {
-    cursor: pointer;
-    border: none;
-    border-radius: 8px;
-    color: $secondaryTextColor;
     font-weight: 600;
     font-size: 15px;
     line-height: 151%;
+    color: $secondaryTextColor;
     box-shadow: inset 0 2px 0 0 rgba(255, 255, 255, 0.2),
       inset 0 -1px 0 1px rgba(0, 0, 0, 0.25), 0 2px 6px 0 rgba(0, 0, 0, 0.1);
-    background-color: linear-gradient(180deg, #7c6ce4 0%, #624de3 100%);
+    background: linear-gradient(180deg, #7c6ce4 0%, #624de3 100%);
+    border: 1px solid $borderColor;
     padding: 12px 20px;
+    border-radius: 8px;
   }
   &__btn-black {
     cursor: pointer;
@@ -50,10 +51,52 @@
     line-height: 151%;
     box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.2),
       0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 4px 8px 0 rgba(0, 0, 0, 0.06);
-      background-color: transparent;
-      padding: 12px 20px;
+    background-color: transparent;
+    padding: 12px 20px;
   }
-  &__list{
+  &__list {
     display: none;
+  }
+}
+@media screen and (min-width: 480px) {
+  .team {
+    padding-top: 49px;
+    &__title {
+      font-size: 36px;
+      line-height: 156%;
+      letter-spacing: -0.03em;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 171%;
+      max-width: 442px;
+    }
+    &__btn-list{
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  }
+}
+@media screen and (min-width:768px){
+  .team{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &__title{
+      font-size: 48px;
+      line-height: 117%;
+      letter-spacing: -0.02em;
+      padding-bottom: 40px;
+    }
+    &__text{
+      font-size: 20px;
+line-height: 160%;
+max-width: 579px;
+padding-bottom: 40px;
+    }
+  }
+}
+@media screen and (min-width:1200px){
+  .team{
+    padding-top: 130px;
   }
 }
