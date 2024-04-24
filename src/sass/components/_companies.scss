@@ -3,14 +3,49 @@
   &__item {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 16px;
-    padding: 0 45px;
+    background-image: radial-gradient(99.22% 111.43% at 10.17% 1.21%, rgb(29, 88, 192) 0%, rgb(21, 23, 24) 34.54727232456207%);
+    background-repeat: no-repeat;
+    &:not(:first-child) {
+      display: none;
+    }
+  }
+  &__item-first
+    > .companies__info-wrap
+    > .companies__link-wrap
+    > .companies__sublist
+    > .companies__subitem
+    > .companies__link {
+    background-color: $linkCarrefourColor;
+  }
+  &__item-second
+    > .companies__info-wrap
+    > .companies__link-wrap
+    > .companies__sublist
+    > .companies__subitem
+    > .companies__link {
+    background-color: $linkNortalColor;
+  }
+  &__item-third
+    > .companies__info-wrap
+    > .companies__link-wrap
+    > .companies__sublist
+    > .companies__subitem
+    > .companies__link {
+    background-color: $linkPitchColor;
   }
   &__info-wrap {
+    padding: 0 45px;
     padding-top: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid $buttonBorderColor;
+  }
+  &__icon-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
   }
   &__logo {
     fill: $secondaryTextColor;
-    margin-bottom: 40px;
   }
   &__title {
     font-weight: 500;
@@ -19,15 +54,33 @@
     text-transform: uppercase;
     color: $companiesTitleColor;
     margin-bottom: 16px;
+    text-align: center;
   }
   &__sublist {
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
   }
+  &__item-second
+    > .companies__info-wrap
+    > .companies__link-wrap
+    > .companies__sublist {
+    justify-content: center;
+  }
+  &__item-second
+    > .companies__info-wrap
+    > .companies__link-wrap
+    > .companies__sublist
+    > .companies__subitem:last-child {
+    margin-left: 8px;
+  }
   &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 40px;
     height: 40px;
+    border-radius: 50%;
   }
   &__link-icon {
     fill: $secondaryTextColor;
@@ -39,5 +92,67 @@
     font-size: 15px;
     line-height: 151%;
     color: $cardTextColor;
+    align-items: center;
+    border-radius: 40px;
+    border: none;
+    background-color: $secondaryTextColor;
+  }
+  &__btn-icon-wrap {
+    width: 20px;
+    height: 20px;
+    background-color: $cardTextColor;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+  }
+  &__btn-icon {
+    fill: $secondaryTextColor;
+  }
+  &__text-wrap {
+    padding: 30px 10px 20px 10px;
+  }
+  &__name {
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 162%;
+    color: $secondaryTextColor;
+    text-align: center;
+  }
+  &__position {
+    font-size: 20px;
+    line-height: 160%;
+    color: $companiesTitleColor;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+  &__text {
+    font-size: 15px;
+    line-height: 160%;
+    text-align: center;
+    color: $secondaryTextColor;
+  }
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  &__list {
+    display: flex;
+  }
+  &__item:nth-child(3) > .slider__point {
+    background-color: $secondaryTextColor;
+  }
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+  &__point {
+    background-color: $companiesTitleColor;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
   }
 }
