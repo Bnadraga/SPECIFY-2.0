@@ -2,9 +2,9 @@
   <div class="container">
     <div class="header__mobile-menu">
       <div class="mobile-wrap">
-        <a class="mobile-logo" href="../index.html">
+        <a class="mobile-logo" href="/index.html">
           <svg width="82px" height="24px">
-            <use href="../img/symbol-defs.svg#icon-logo"></use>
+            <use href="./img/symbol-defs.svg#icon-logo"></use>
           </svg>
         </a>
         <button
@@ -13,23 +13,26 @@
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg class="header-svg" width="23px" height="14px">
-            <use href="../img/symbol-defs.svg#icon-open-menu"></use>
-          </svg>
+        <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1H22" stroke="white" stroke-width="2" stroke-linecap="round" />
+          <path d="M1 8H22" stroke="white" stroke-width="2" stroke-linecap="round" />
+          <path d="M1 15H22" stroke="white" stroke-width="2" stroke-linecap="round" />
+        </svg>
         </button>
       </div>
       <div class="menu-container js-menu-container">
         <div class="mobile-wrap">
           <div class="mobile__logo-wrap">
-            <a class="mobile-logo" href="../index.html">
+            <a class="mobile-logo" href="/index.html">
               <svg width="82px" height="24px">
-                <use href="../img/symbol-defs.svg#icon-logo"></use>
+                <use href="./img/symbol-defs.svg#icon-logo"></use>
               </svg>
             </a>
           </div>
           <button class="menu-button-close js-close-menu">
-            <svg class="header-svg">
-              <use href="../img/symbol-defs.svg#icon-close-menu"></use>
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 16L16 1" stroke="white" stroke-width="2" stroke-linecap="round" />
+              <path d="M16 16L1 1" stroke="white" stroke-width="2" stroke-linecap="round" />
             </svg>
           </button>
         </div>
@@ -60,6 +63,86 @@
             <button class="mobile__button-second">Start for free</button>
           </li>
         </ul>
+      </div>
+    </div>
+    <div class="header__desktop">
+      <a class="desktop-logo" href="../index.html">
+        <svg width="82px" height="24px">
+          <use href="./img/symbol-defs.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <ul class="desktop-box">
+        <li class="desktop-box__item">
+          <select class="gategories">
+            <option class="gatedories-option" value="1">Solutions</option>
+            <option class="gatedories-option" value="2">Contact-us</option>
+            <option class="gatedories-option" value="3">Company Info</option>
+          </select>
+        </li>
+        <li class="desktop-box__item">
+          <select class="gategories">
+            <option class="gatedories-option" value="1">Resources</option>
+            <option class="gatedories-option" value="2">Contact-us</option>
+            <option class="gatedories-option" value="3">Company Info</option>
+          </select>
+        </li>
+        <li class="desktop-box__item">
+          <a class="menu-box__link" href="#">Pricing</a>
+        </li>
+      </ul>
+      <ul class="desktop__list-button">
+        <li class="desktop__item-button">
+          <button class="mobile__button" data-modal-open>Sign in</button>
+        </li>
+        <li class="desktop__item-button">
+          <button class="mobile__button-second">Start for free</button>
+        </li>
+      </ul>
+
+      <div class="modal">
+        <div class="backdrop is-hidden" data-modal>
+          <button type="button" class="modal__close-button" data-modal-close>
+            <svg class="modal__icon" width="18" height="18">
+              <use href="./img/symbol-defs.svg#icon-close-menu"></use>
+            </svg>
+          </button>
+          <h2 class="modal__title">Hello, Welcome Back!</h2>
+          <form class="modal__form">
+            <div class="modal__form-wrap">
+              <input
+                required
+                class="modal__mail"
+                type="email"
+                name="email"
+                id="mail"
+                placeholder="E-mail"
+              />
+              <div class="modal__wrap">
+                <input
+                  required
+                  class="modal__password"
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Password"
+                />
+                <a href="#">
+                  <svg class="modal__eye" width="20px" height="20px">
+                    <use href="./img/symbol-defs.svg#icon-eye"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <button id="submit" type="submit" class="modal__button">
+              Sign in
+            </button>
+          </form>
+          <a href="#" class="modal__link">Forget password?</a>
+          <div class="modal__text-wrap">
+            <p class="modal__text">Don’t have an account?</p>
+            <a href="#" class="modal__sign-up">Sign up</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>

@@ -5,6 +5,7 @@
   width: 100%;
   height: 100vh;
   z-index: 1;
+  padding-top: 25px;
   padding-left: 20px;
   padding-right: 20px;
   background-color: $cardTextColor;
@@ -30,10 +31,7 @@
   width: 15px;
   height: 15px;
   background-color: transparent;
-}
-.mobile-wrap {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-right: 20px;
 }
 .menu-box {
   margin-top: 20px;
@@ -43,12 +41,13 @@
   align-items: start;
 }
 .gategories {
-  background-color: transparent;
+  background-color: $cardTextColor;
   border: none;
   font-weight: 500;
   font-size: 13px;
   line-height: 173%;
   color: $headerListColor;
+  cursor: pointer;
 }
 .gategories-option {
   font-weight: 500;
@@ -56,6 +55,14 @@
   line-height: 173%;
   color: $headerListColor;
   background-color: $cardTextColor;
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: 450ms;
+}
+.gategories:hover,
+.gategories:focus{
+  color: $borderColor;
+  transition-duration: 450ms;
 }
 .mobile__list-button {
   display: flex;
@@ -72,6 +79,18 @@
   border-radius: 6px;
   padding: 4px 16px;
   margin-right: 8px;
+  transition-duration: 350ms;
+  transition-property: all;
+}
+.mobile__button:hover,
+.mobile__button:focus {
+  border: 1px solid $buttonBorderColor;
+  background: linear-gradient(180deg, #7c6ce4 0%, #624de3 100%);
+  color: $secondaryTextColor;
+  border-radius: 6px;
+  padding: 4px 16px;
+  box-shadow: inset 0 2px 0 0 rgba(255, 255, 255, 0.2),
+    inset 0 -1px 0 1px rgba(0, 0, 0, 0.25), 0 2px 6px 0 rgba(0, 0, 0, 0.1);
 }
 .mobile__button-second {
   border: 1px solid $buttonBorderColor;
@@ -84,12 +103,26 @@
   padding: 4px 16px;
   box-shadow: inset 0 2px 0 0 rgba(255, 255, 255, 0.2),
     inset 0 -1px 0 1px rgba(0, 0, 0, 0.25), 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+  transition-duration: 350ms;
+  transition-property: all;
+}
+.mobile__button-second:hover,
+.mobile__button-second:focus {
+  border: 1px solid $buttonBorderColor;
+  background-color: $cardTextColor;
+  background: none;
+  box-shadow: none;
 }
 .menu-box__link {
   font-weight: 500;
   font-size: 13px;
   line-height: 173%;
   color: $headerListColor;
+  transition-duration: 450ms;
+}
+.menu-box__link:hover,
+.menu-box__link:focus{
+  color: $borderColor;
 }
 .menu-box__item:not(:last-child) {
   margin-bottom: 40px;
@@ -101,4 +134,201 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.desktop-logo {
+  display: none;
+}
+.desktop-box {
+  display: none;
+}
+.desktop__list-button {
+  display: none;
+}
+.header__mobile-menu {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid $borderColor;
+}
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+  .mobile-wrap {
+    display: none;
+  }
+  .header__mobile-menu {
+    display: none;
+  }
+  .desktop-logo {
+    display: block;
+  }
+  .desktop-box {
+    display: block;
+  }
+  .desktop__list-button {
+    display: block;
+  }
+  .header__desktop {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid $borderColor;
+    display: flex;
+    align-items: center;
+  }
+  .desktop-box {
+    display: flex;
+    margin-left: 72px;
+    margin-right: 40px;
+  }
+  .desktop-box__item:not(:last-child) {
+    margin-right: 20px;
+  }
+  .desktop__list-button {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .desktop-box {
+    margin-left: 315px;
+    margin-right: 160px;
+  }
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#624de3, #000);
+  border-radius: 8px;
+  padding: 20px;
+  transition-duration: 350ms;
+
+}
+.is-hidden {
+  visibility: hidden;
+  pointer-events: none;
+  transition-duration: 350ms;
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 700px;
+  min-height: 282px;
+  border-radius: 24px;
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 99;
+  transition-duration: 350ms;
+}
+.modal__close-button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.modal__title {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: $secondaryTextColor;
+  width: 181px;
+  margin: 0 auto;
+}
+.modal__form-wrap {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+.modal__mail {
+  background-color: transparent;
+  border: 1px solid $secondaryTextColor;
+  border-radius: 5px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 15px;
+  padding-right: 70px;
+  margin-right: 15px;
+  color: $secondaryTextColor;
+}
+.modal__mail::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  color: $secondaryTextColor;
+}
+.modal__password {
+  background-color: transparent;
+  border: 1px solid $secondaryTextColor;
+  border-radius: 5px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 15px;
+  padding-right: 70px;
+  color: $secondaryTextColor;
+}
+.modal__password::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  color: $secondaryTextColor;
+}
+.modal__eye {
+  fill: $secondaryTextColor;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+.modal__wrap {
+  position: relative;
+}
+.modal__link {
+  position: absolute;
+  right: 20px;
+  top: 160px;
+  color: $secondaryTextColor;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+}
+.modal__button {
+  background-color: $programTextColor;
+  border: 1px solid $programTextColor;
+  padding: 7px 52px;
+  color: $secondaryTextColor;
+  border-radius: 27px;
+  transition-duration: 350ms;
+  margin: 0 auto;
+}
+#submit {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+.modal__button:hover {
+  background-color: transparent;
+  border: none;
+  padding: 7px 52px;
+  color: $secondaryTextColor;
+  border: 1px solid $secondaryTextColor;
+  border-radius: 27px;
+}
+.modal__text {
+  font-weight: 400;
+  font-size: 13px;
+  color: $secondaryTextColor;
+}
+.modal__sign-up {
+  font-weight: 700;
+  font-size: 13px;
+  color: $programTextColor;
+  margin-left: 5px;
+}
+.modal__text-wrap {
+  display: flex;
+  justify-content: center;
 }

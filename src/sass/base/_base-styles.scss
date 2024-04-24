@@ -23,6 +23,10 @@ a{
 ::before {
   box-sizing: border-box;
 }
+button:hover,
+button:focus{
+    cursor: pointer;
+}
 img{
     display: block;
     max-width: 100%;
