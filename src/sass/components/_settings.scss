@@ -57,4 +57,126 @@
     fill: $secondaryTextColor;
     margin-right: 8px;
   }
+
+  &__item {
+    margin-bottom: 25px;
+  }
+  &__title-wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+  }
+  &__icon {
+    fill: $iconColor;
+    margin-right: 6px;
+  }
+  &__subtitle {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 151%;
+    color: $secondaryTextColor;
+  }
+  &__subtext {
+    font-size: 16px;
+    line-height: 150%;
+    color: $mainTextColor;
+  }
+}
+
+.settings__card {
+  padding: 40px 10px;
+  padding-bottom: 142px;
+  border: 1px solid $borderColor;
+  border-radius: 24px;
+  &-list {
+    margin-bottom: 40px;
+  }
+  &:nth-child(1) {
+    margin-bottom: 30px;
+    background-image: url(../img/settings/first-card-sm@1x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+  }
+  &:nth-child(2) {
+    background-image: url(../img/settings/second-card-sm@1x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+  }
+  &-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 167%;
+    letter-spacing: -0.04em;
+    color: $secondaryTextColor;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  &-text {
+    font-size: 11px;
+    line-height: 218%;
+    text-align: center;
+    color: $headerListColor;
+    margin-bottom: 20px;
+  }
+  &-btn {
+    border-radius: 40px;
+    border: none;
+    background-color: $secondaryTextColor;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 151%;
+    color: $cardTextColor;
+    display: flex;
+    align-items: center;
+    padding: 8px 8px 8px 16px;
+    margin: 0 auto;
+  }
+  &-icon {
+    background-color: $cardTextColor;
+    border-radius: 50%;
+    fill: $secondaryTextColor;
+    margin-left: 8px;
+  }
+}
+@supports (background-image: url(../img/settings/first-card-sm@1x.webp)) {
+  .settings__card:nth-child(1) {
+    background-image: url(../img/settings/first-card-sm@1x.webp);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .settings__card:nth-child(1) {
+    background-image: url(../img/settings/first-card-sm@2x.png);
+  }
+  @supports (background-image: url(../img/settings/first-card-sm@2x.webp)) {
+    .settings__card:nth-child(1) {
+      background-image: url(../img/settings/first-card-sm@2x.webp);
+    }
+  }
+}
+@supports (background-image: url(../img/settings/first-card-sm@1x.webp)) {
+  .settings__card:nth-child(2) {
+    background-image: url(../img/settings/second-card-sm@1x.webp);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .settings__card:nth-child(2) {
+    background-image: url(../img/settings/second-card-sm@2x.png);
+  }
+  @supports (background-image: url(../img/settings/second-card-sm@2x.webp)) {
+    .settings__card:nth-child(2) {
+      background-image: url(../img/settings/second-card-sm@2x.webp);
+    }
+  }
 }
