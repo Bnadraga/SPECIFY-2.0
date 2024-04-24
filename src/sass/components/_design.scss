@@ -1,0 +1,82 @@
+.design {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: -0.04em;
+    text-align: center;
+    color: $secondaryTextColor;
+    padding-bottom: 40px;
+  }
+  &__item-one{
+    border-radius: 24px;
+    background-image: url(./img/design/first-card-sm@1x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 30px;
+    padding-bottom: 140px;
+    padding-left: 10px;
+    padding-right: 10px;
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+      background-image: url(./img/design/first-card-sm@2x.png);
+    }
+  }
+  &__item-two{
+    padding-top: 30px;
+    padding-bottom: 140px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 24px;
+    background-image: url(./img/design/second-card-sm@1x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx){
+    background-image: url(./img/design/second-card-sm@2x.png);
+  }
+  }
+  &__subtitle{
+    font-weight: 600;
+font-size: 20px;
+line-height: 200%;
+letter-spacing: -0.05em;
+color: $secondaryTextColor;
+padding-bottom: 16px;
+  }
+  &__text{
+    font-weight: 400;
+font-size: 12px;
+line-height: 167%;
+text-align: center;
+color: $mainTextColor;
+max-width: 270px;
+padding-bottom: 25px;
+  }
+  &__btn{
+    border-radius: 40px;
+    background-color: $secondaryTextColor;
+    padding: 8px 16px;
+    border: none;
+    font-weight: 600;
+font-size: 15px;
+line-height: 151%;
+color: $cardTextColor;
+display: flex;
+align-items: center;
+  }
+  &__icon{
+    border-radius: 16px;
+width: 20px;
+height: 20px;
+margin-right: 8px;
+  }
+}
