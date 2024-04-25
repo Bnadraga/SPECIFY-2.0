@@ -18,6 +18,7 @@
         rgb(0, 150, 57) 0%,
         rgb(21, 23, 24) 22.71784394979477%
       );
+      background-repeat: no-repeat;
     }
     &:nth-child(3) {
       background: radial-gradient(
@@ -25,6 +26,7 @@
         rgb(141, 74, 247) 0%,
         rgb(21, 23, 24) 100%
       );
+      background-repeat: no-repeat;
     }
   }
   &__item-first
@@ -114,6 +116,7 @@
     border-radius: 40px;
     border: none;
     background-color: $secondaryTextColor;
+    margin: 0 auto;
   }
   &__btn-icon-wrap {
     width: 20px;
@@ -172,5 +175,99 @@
     width: 6px;
     height: 6px;
     border-radius: 50%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .companies {
+    &__info-wrap {
+      padding: 40px 125px;
+      padding-bottom: 20px;
+    }
+    &__sublist {
+      justify-content: space-evenly;
+    }
+    &__text-wrap {
+      padding: 20px 10px 30px 10px;
+    }
+    &__text {
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .companies {
+    padding-top: 50px;
+    &__item {
+      display: flex;
+    }
+    &__item-first > .companies__info-wrap > .companies__icon-wrap {
+      margin-bottom: 89px;
+    }
+    &__item-second > .companies__info-wrap > .companies__icon-wrap {
+      background-color: $linkNortalColor;
+      margin-bottom: 80px;
+    }
+    &__item-third > .companies__info-wrap > .companies__icon-wrap {
+      background-color: $linkPitchColor;
+      margin-bottom: 87px;
+    }
+    &__info-wrap {
+      padding: 40px;
+      border-bottom: none;
+      border-right: 1px solid $buttonBorderColor;
+      flex-wrap: wrap;
+      align-items: center;
+      display: flex;
+      text-align: center;
+    }
+    &__icon-wrap {
+      margin: 0 auto;
+    }
+    &__link-wrap {
+      width: 200px;
+    }
+    &__text-wrap {
+      padding: 40px 15px 80px 25px;
+    }
+    &__name {
+      text-align: left;
+    }
+    &__position {
+      justify-content: start;
+    }
+    &__text {
+      font-size: 20px;
+      text-align: left;
+    }
+  }
+  .slider {
+    margin-top: 18px;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .companies {
+    padding-top: 140px;
+    padding-bottom: 56px;
+    &__item {
+      width: 800px;
+      margin: 0 auto;
+    }
+    &__info-wrap {
+      padding: 0 53.5px;
+      padding-top: 68px;
+      padding-bottom: 40px;
+    }
+    &__icon-wrap {
+      margin-bottom: 88px;
+    }
+    &__sublist {
+      margin-bottom: 60px;
+    }
+    &__text-wrap {
+      padding: 40px 40px 80px 40px;
+    }
   }
 }
