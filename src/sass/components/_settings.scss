@@ -58,7 +58,7 @@
     margin-right: 8px;
   }
 
-  &__item {
+  &__item:not(:last-child) {
     margin-bottom: 25px;
   }
   &__title-wrap {
@@ -178,5 +178,202 @@
     .settings__card:nth-child(2) {
       background-image: url(../img/settings/second-card-sm@2x.webp);
     }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .settings {
+    &__title {
+      font-size: 36px;
+      line-height: 156%;
+      letter-spacing: -0.03em;
+      width: 309px;
+      margin: 0 auto;
+      margin-bottom: 25px;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 171%;
+      width: 338px;
+      margin: 0 auto;
+      margin-bottom: 25px;
+    }
+    &__btn-list {
+      width: 300px;
+      justify-content: space-between;
+    }
+    &-btn {
+      margin-right: 16px;
+    }
+    &__item {
+      width: 330px;
+      margin: 0 auto;
+    }
+  }
+  .settings__card {
+    padding: 40px 20px;
+    padding-bottom: 142px;
+    width: 360px;
+    margin: 0 auto;
+    &:nth-child(1) {
+      background-image: url(../img/settings/first-card-mobile@1x.png);
+    }
+    &:nth-child(2) {
+      background-image: url(../img/settings/second-card-mobile@1x.png);
+    }
+    &-title {
+      font-size: 31px;
+      line-height: 125%;
+      letter-spacing: -0.03em;
+    }
+    &-text {
+      font-size: 14px;
+      line-height: 171%;
+      margin-bottom: 45px;
+    }
+  }
+  @supports (background-image: url(../img/settings/first-card-mobile@1x.webp)) {
+    .settings__card:nth-child(1) {
+      background-image: url(../img/settings/first-card-mobile@1x.webp);
+    }
+  }
+  @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .settings__card:nth-child(1) {
+      background-image: url(../img/settings/first-card-mobile@2x.png);
+    }
+    @supports (
+      background-image: url(../img/settings/first-card-mobile@2x.webp)
+    ) {
+      .settings__card:nth-child(1) {
+        background-image: url(../img/settings/first-card-mobile@2x.webp);
+      }
+    }
+  }
+  @supports (background-image: url(../img/settings/first-card-mobile@1x.webp)) {
+    .settings__card:nth-child(2) {
+      background-image: url(../img/settings/second-card-mobile@1x.webp);
+    }
+  }
+  @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .settings__card:nth-child(2) {
+      background-image: url(../img/settings/second-card-mobile@2x.png);
+    }
+    @supports (
+      background-image: url(../img/settings/second-card-mobile@2x.webp)
+    ) {
+      .settings__card:nth-child(2) {
+        background-image: url(../img/settings/second-card-mobile@2x.webp);
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .settings {
+    padding-bottom: 30px;
+    &__title {
+      font-size: 48px;
+      line-height: 117%;
+      letter-spacing: -0.02em;
+      width: 350px;
+      margin-bottom: 40px;
+    }
+    &__text {
+      font-size: 20px;
+      line-height: 160%;
+      margin-bottom: 40px;
+      width: 496px;
+    }
+    &__item {
+      width: 354px;
+    }
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    &__item {
+      margin: 0;
+    }
+    &__item:not(:last-child) {
+      margin-bottom: 0;
+    }
+    &__item:nth-child(-n + 4) {
+      margin-bottom: 30px;
+    }
+  }
+  .settings__card {
+    margin: 0;
+    &-list {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 85px;
+    }
+    &:nth-child(1) {
+      background-image: url(../img/settings/first-card-tablet@1x.png);
+      margin-bottom: 0;
+    }
+    &:nth-child(2) {
+      background-image: url(../img/settings/second-card-tablet@1x.png);
+    }
+  }
+  @supports (background-image: url(../img/settings/first-card-tablet@1x.webp)) {
+    .settings__card:nth-child(1) {
+      background-image: url(../img/settings/first-card-tablet@1x.webp);
+    }
+  }
+  @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .settings__card:nth-child(1) {
+      background-image: url(../img/settings/first-card-tablet@2x.png);
+    }
+    @supports (
+      background-image: url(../img/settings/first-card-tablet@2x.webp)
+    ) {
+      .settings__card:nth-child(1) {
+        background-image: url(../img/settings/first-card-tablet@2x.webp);
+      }
+    }
+  }
+  @supports (background-image: url(../img/settings/first-card-tablet@1x.webp)) {
+    .settings__card:nth-child(2) {
+      background-image: url(../img/settings/second-card-tablet@1x.webp);
+    }
+  }
+  @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .settings__card:nth-child(2) {
+      background-image: url(../img/settings/second-card-tablet@2x.png);
+    }
+    @supports (
+      background-image: url(../img/settings/second-card-tablet@2x.webp)
+    ) {
+      .settings__card:nth-child(2) {
+        background-image: url(../img/settings/second-card-tablet@2x.webp);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .settings {
+    padding: 80px 0;
   }
 }
