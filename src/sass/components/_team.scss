@@ -17,9 +17,7 @@
     text-align: center;
     color: $mainTextColor;
     max-width: 290px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
   }
   &__btn-list {
     display: flex;
@@ -66,7 +64,7 @@
       line-height: 156%;
       letter-spacing: -0.03em;
     }
-    &__text {
+    &__describe {
       font-size: 14px;
       line-height: 171%;
       max-width: 442px;
@@ -87,7 +85,7 @@
       letter-spacing: -0.02em;
       padding-bottom: 40px;
     }
-    &__text{
+    &__describe{
       font-size: 20px;
 line-height: 160%;
 max-width: 579px;
@@ -95,8 +93,13 @@ padding-bottom: 40px;
     }
   }
 }
-@media screen and (min-width:1200px){
+@media screen and (min-width:11500px){
   .team{
     padding-top: 130px;
+ 
+  &__btn-list{
+    justify-content: center;
+    margin-top: 40px;
   }
+}
 }
