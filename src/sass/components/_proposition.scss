@@ -1,0 +1,14 @@
+.proposition{
+    padding-top: 50px;
+    padding-bottom: 40px;
+    &__title{
+        font-weight: 700;
+font-size: 24px;
+line-height: 133%;
+letter-spacing: -0.04em;
+text-align: center;
+color: $secondaryTextColor;
+padding-bottom: 25px;
+    }
+    
+}
