@@ -9,6 +9,49 @@ letter-spacing: -0.04em;
 text-align: center;
 color: $secondaryTextColor;
 padding-bottom: 25px;
+max-width: 238px;
+margin: 0 auto;
     }
-    
+    &__btn-wrap{
+        display: flex;
+        justify-content: center;
+    }
+    &__btn{
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 151%;
+        color: $secondaryTextColor;
+        box-shadow: inset 0 2px 0 0 rgba(255, 255, 255, 0.2),
+          inset 0 -1px 0 1px rgba(0, 0, 0, 0.25), 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+        background: linear-gradient(180deg, #7c6ce4 0%, #624de3 100%);
+        border: 1px solid $borderColor;
+        padding: 12px 20px;
+        border-radius: 8px;
+    }
+}
+@media screen and (min-width:480px){
+    .proposition{
+        &__title{
+            font-size: 36px;
+line-height: 156%;
+letter-spacing: -0.03em;
+max-width: 367px;
+        }
+    }
+}
+@media screen and (min-width:768px){
+    .proposition{
+        &__title{
+            font-size: 48px;
+line-height: 117%;
+letter-spacing: -0.02em;
+max-width: 496px;
+        }
+    }
+}
+@media screen and (min-width:1150px){
+    .proposition{
+        padding-top: 80px;
+        padding-bottom: 160px;
+    }
 }
