@@ -5,11 +5,11 @@
         <div class="proposition__btn-wrap">
             <button class="proposition__btn" data-modal-open>Book demo</button>
         </div>
-<div class="backdrop is-hidden">
-    <div class="modal" data-modal>
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
         <div class="modal__close-wrap">
             <button class="modal__close-btn" data-modal-close type="button">
-                <svg>
+                <svg class="modal__close-icon">
                     <use href="../img/symbol-defs.svg#icon-close-menu"></use>
                   </svg>
             </button>
@@ -24,9 +24,15 @@
             </label>
             <label class="modal__label">
               <input type="password" class="modal__input" placeholder="Password">
+              <svg class="modal__eye">
+                <use href="../img/symbol-defs.svg#icon-eye"></use>
+              </svg>
             </label>
             <label class="modal__label">
               <input type="password" class="modal__input" placeholder="Confirm Password">
+              <svg class="modal__eye">
+                <use href="../img/symbol-defs.svg#icon-eye"></use>
+              </svg>
             </label>
              <label class="modal__checkbox">
                 <input type="checkbox" class="modal__checkbox-input">
