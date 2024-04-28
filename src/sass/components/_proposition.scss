@@ -1,6 +1,7 @@
 .proposition {
   padding-top: 50px;
   padding-bottom: 40px;
+  border-bottom: 1px solid $borderColor;
   &__title {
     font-weight: 700;
     font-size: 24px;

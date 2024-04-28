@@ -1,6 +1,10 @@
 .footer{
-    padding-top: 30px;
-    border-top: 1px solid $borderColor;
+    &__logos{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
     &__logo{
         margin: 0 auto;
     }
@@ -18,18 +22,13 @@ height: 24px;
     &__list{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
     }
-    &__new{
-        border-radius: 16px;
-padding: 2px 8px 7214px 8px;
-background-color: $footerNewBackgroundColor;
-font-weight: 600;
-font-size: 11px;
-line-height: 153%;
-color: $secondaryTextColor;
-margin-left: 8px;
+    &__item{
+        margin-left: 38px;
+        &:first-child{
+            padding-bottom: 50px;
+        }
     }
     &__title{
         font-weight: 600;
@@ -43,7 +42,16 @@ padding-bottom: 17px;
 font-size: 14px;
 line-height: 171%;
 color: $mainTextColor;
-padding-bottom: 8.5px;
+}
+&__new{
+    border-radius: 16px;
+padding: 2px 8px;
+background-color: $footerNewBackgroundColor;
+font-weight: 600;
+font-size: 11px;
+line-height: 153%;
+color: $secondaryTextColor;
+margin-left: 8px;
 }
 &__secondary{
     padding-top: 15px;
@@ -60,10 +68,12 @@ font-size: 12px;
 line-height: 200%;
 color: $mainTextColor;
 }
-&__describtion{
+&__describition{
     margin-top: 5px;
+    display: flex;
+    justify-content: center;
 }
-&__describtion-link{
+&__describition-link{
     font-weight: 400;
 font-size: 12px;
 line-height: 200%;
