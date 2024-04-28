@@ -77,8 +77,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 528px;
-  min-height: 581px;
+  width: 100%;
+  height: 100%;
+  background-color: $cardTextColor;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -105,6 +106,7 @@
     color: $secondaryTextColor;
     padding-bottom: 25px;
     margin: 0 auto;
+    max-width: 113px;
   }
   &__form {
     display: flex;
@@ -133,6 +135,48 @@
     margin-right: 13px;
   }
   &__confidiration{
-    
+    font-size: 12px;
+    color: $secondaryTextColor;
   }
+  &__purple{
+    font-weight: 700;
+    color: $programTextColor;
+  }
+  &__btn{
+    background-color: $programTextColor;
+  border: 1px solid $programTextColor;
+  padding: 7px 52px;
+  color: $secondaryTextColor;
+  border-radius: 27px;
+  margin: 0 auto;
+  font-weight: 700;
+font-size: 14px;
+transition: color 500ms ease-in-out, background-color 500ms ease-in-out;
+margin-top: 24px;
+margin-bottom: 25px;
+&:hover{
+  background-color: none;
+  color: $programTextColor;
+}
+  }
+&__already{
+  font-size: 13px;
+color: $secondaryTextColor;
+}
+&__sing-up{
+  font-weight: 700;
+  color: $programTextColor;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+}
+@media screen and (min-width:768px){
+.modal{
+min-width: 515px;
+&__form{
+  display: flex;
+  flex-wrap: wrap;
+}
+}  
 }

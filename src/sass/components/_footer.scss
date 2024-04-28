@@ -1,0 +1,72 @@
+.footer{
+    padding-top: 30px;
+    border-top: 1px solid $borderColor;
+    &__logo{
+        margin: 0 auto;
+    }
+    &__logo-icon{
+        width: 82px;
+        height: 24px;
+    }
+    &__describe{
+        margin: 0 auto;
+    }
+    &__describe-icon{
+        width: 184px;
+height: 24px;
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__new{
+        border-radius: 16px;
+padding: 2px 8px 7214px 8px;
+background-color: $footerNewBackgroundColor;
+font-weight: 600;
+font-size: 11px;
+line-height: 153%;
+color: $secondaryTextColor;
+margin-left: 8px;
+    }
+    &__title{
+        font-weight: 600;
+font-size: 13px;
+line-height: 173%;
+color: $secondaryTextColor;
+padding-bottom: 17px;
+    }
+&__text{
+    font-weight: 400;
+font-size: 14px;
+line-height: 171%;
+color: $mainTextColor;
+padding-bottom: 8.5px;
+}
+&__secondary{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 1px solid $borderColor;
+}
+&__list-secondary{
+    display: flex;
+    justify-content: space-around;
+}
+&__text-secondary{
+    font-weight: 400;
+font-size: 12px;
+line-height: 200%;
+color: $mainTextColor;
+}
+&__describtion{
+    margin-top: 5px;
+}
+&__describtion-link{
+    font-weight: 400;
+font-size: 12px;
+line-height: 200%;
+color: $mainTextColor;
+}
+}
