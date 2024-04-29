@@ -80,3 +80,49 @@ line-height: 200%;
 color: $mainTextColor;
 }
 }
+@media screen and (min-width:480px){
+    .footer{
+        &__logos{
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        &__item{
+            margin-right: 88px;
+        }
+        &__secondary{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__item-secondary{
+            margin-right: 10px;
+        }
+    }
+}
+@media screen and (min-width:768px){
+    .footer{
+        &__list{
+            justify-content: space-between;
+            margin-bottom: 32px;
+        }
+        &__item{
+            margin-right: 48px;
+        }
+    }
+}
+@media screen and (min-width:1150px){
+    .footer{
+        &__primary{
+            display: flex;
+            padding-top: 64px;
+            justify-content: space-around;
+            align-items: center;
+        }
+        &__logos{
+            flex-direction: column;
+        }
+        &__logo{
+            margin-bottom: 240px;
+        }
+    }
+}
