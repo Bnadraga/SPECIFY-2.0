@@ -1,128 +1,132 @@
-.footer{
-    &__logos{
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 30px;
-        padding-top: 30px;
+.footer {
+  &__logos {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  &__logo {
+    margin: 0 auto;
+  }
+  &__logo-icon {
+    width: 82px;
+    height: 24px;
+  }
+  &__describe {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 173%;
+    color: $companiesTitleColor;
+    display: flex;
+    align-items: center;
+  }
+  &__svg{
+    margin-right: 8px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  &__item {
+    margin-left: 38px;
+    &:first-child {
+      padding-bottom: 50px;
     }
-    &__logo{
-        margin: 0 auto;
-    }
-    &__logo-icon{
-        width: 82px;
-        height: 24px;
-    }
-    &__describe{
-        margin: 0 auto;
-    }
-    &__describe-icon{
-        width: 184px;
-height: 24px;
-    }
-    &__list{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-    }
-    &__item{
-        margin-left: 38px;
-        &:first-child{
-            padding-bottom: 50px;
-        }
-    }
-    &__title{
-        font-weight: 600;
-font-size: 13px;
-line-height: 173%;
-color: $secondaryTextColor;
-padding-bottom: 17px;
-    }
-&__text{
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 173%;
+    color: $secondaryTextColor;
+    padding-bottom: 17px;
+  }
+  &__text {
     font-weight: 400;
-font-size: 14px;
-line-height: 171%;
-color: $mainTextColor;
-}
-&__new{
+    font-size: 14px;
+    line-height: 171%;
+    color: $mainTextColor;
+  }
+  &__new {
     border-radius: 16px;
-padding: 2px 8px;
-background-color: $footerNewBackgroundColor;
-font-weight: 600;
-font-size: 11px;
-line-height: 153%;
-color: $secondaryTextColor;
-margin-left: 8px;
-}
-&__secondary{
+    padding: 2px 8px;
+    background-color: $footerNewBackgroundColor;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 153%;
+    color: $secondaryTextColor;
+    margin-left: 8px;
+  }
+  &__secondary {
     padding-top: 15px;
     padding-bottom: 15px;
     border-top: 1px solid $borderColor;
-}
-&__list-secondary{
+  }
+  &__list-secondary {
     display: flex;
     justify-content: space-around;
-}
-&__text-secondary{
+  }
+  &__text-secondary {
     font-weight: 400;
-font-size: 12px;
-line-height: 200%;
-color: $mainTextColor;
-}
-&__describition{
+    font-size: 12px;
+    line-height: 200%;
+    color: $mainTextColor;
+  }
+  &__describition {
     margin-top: 5px;
     display: flex;
     justify-content: center;
-}
-&__describition-link{
+  }
+  &__describition-link {
     font-weight: 400;
-font-size: 12px;
-line-height: 200%;
-color: $mainTextColor;
+    font-size: 12px;
+    line-height: 200%;
+    color: $mainTextColor;
+  }
 }
-}
-@media screen and (min-width:480px){
-    .footer{
-        &__logos{
-            flex-direction: row;
-            justify-content: space-evenly;
-        }
-        &__item{
-            margin-right: 88px;
-        }
-        &__secondary{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        &__item-secondary{
-            margin-right: 10px;
-        }
+@media screen and (min-width: 480px) {
+  .footer {
+    &__logos {
+      flex-direction: row;
+      justify-content: space-evenly;
     }
-}
-@media screen and (min-width:768px){
-    .footer{
-        &__list{
-            justify-content: space-between;
-            margin-bottom: 32px;
-        }
-        &__item{
-            margin-right: 48px;
-        }
+    &__item {
+      margin-right: 88px;
     }
-}
-@media screen and (min-width:1150px){
-    .footer{
-        &__primary{
-            display: flex;
-            padding-top: 64px;
-            justify-content: space-around;
-            align-items: center;
-        }
-        &__logos{
-            flex-direction: column;
-        }
-        &__logo{
-            margin-bottom: 240px;
-        }
+    &__secondary {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
+    &__item-secondary {
+      margin-right: 10px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    &__list {
+      justify-content: space-between;
+      margin-bottom: 32px;
+    }
+    &__item {
+      margin-right: 48px;
+    }
+  }
+}
+@media screen and (min-width: 1150px) {
+  .footer {
+    &__primary {
+      display: flex;
+      padding-top: 64px;
+      justify-content: space-around;
+      align-items: center;
+    }
+    &__logos {
+      flex-direction: column;
+    }
+    &__logo {
+      margin-bottom: 240px;
+    }
+  }
 }
