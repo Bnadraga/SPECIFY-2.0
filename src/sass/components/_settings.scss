@@ -254,7 +254,7 @@
       }
     }
   }
-  @supports (background-image: url(../img/settings/first-card-mobile@1x.webp)) {
+  @supports (background-image: url(../img/settings/second-card-mobile@1x.webp)) {
     .settings__card:nth-child(2) {
       background-image: url(../img/settings/second-card-mobile@1x.webp);
     }
