@@ -1,0 +1,183 @@
+.proposition {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid $borderColor;
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: -0.04em;
+    text-align: center;
+    color: $secondaryTextColor;
+    padding-bottom: 25px;
+    max-width: 238px;
+    margin: 0 auto;
+  }
+  &__btn-wrap {
+    display: flex;
+    justify-content: center;
+  }
+  &__btn {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 151%;
+    color: $secondaryTextColor;
+    box-shadow: inset 0 2px 0 0 rgba(255, 255, 255, 0.2),
+      inset 0 -1px 0 1px rgba(0, 0, 0, 0.25), 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+    background: linear-gradient(180deg, #7c6ce4 0%, #624de3 100%);
+    border: 1px solid $borderColor;
+    padding: 12px 20px;
+    border-radius: 8px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .proposition {
+    &__title {
+      font-size: 36px;
+      line-height: 156%;
+      letter-spacing: -0.03em;
+      max-width: 367px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .proposition {
+    &__title {
+      font-size: 48px;
+      line-height: 117%;
+      letter-spacing: -0.02em;
+      max-width: 496px;
+    }
+  }
+}
+@media screen and (min-width: 1150px) {
+  .proposition {
+    padding-top: 80px;
+    padding-bottom: 160px;
+  }
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 500ms cubic-bezier(0.83, -0.08, 0.32, 1) 250ms,
+    visibility 500ms cubic-bezier(0.83, -0.08, 0.32, 1) 250ms;
+  opacity: 1;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.up {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: $cardTextColor;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transform: translate(-50%, -50%) scale(1);
+  transition: opacity 500ms cubic-bezier(0.83, -0.08, 0.32, 1) 250ms;
+  &__close-wrap {
+    display: flex;
+    justify-content: end;
+  }
+  &__close-btn {
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  &__close-icon {
+    width: 12px;
+    height: 12px;
+    fill: $secondaryTextColor;
+  }
+  &__title {
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: $secondaryTextColor;
+    padding-bottom: 25px;
+    margin: 0 auto;
+    max-width: 113px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__input {
+    min-width: 260px;
+    min-height: 40px;
+    border: 1px solid $secondaryTextColor;
+    border-radius: 5px;
+    background-color: transparent;
+  }
+  &__input::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: $secondaryTextColor;
+    opacity: 0.3;
+    padding-left: 15px;
+  }
+  &__eye{
+    width: 15px;
+    height: 15px;
+    fill: $secondaryTextColor;
+    margin-right: 13px;
+  }
+  &__confidiration{
+    font-size: 12px;
+    color: $secondaryTextColor;
+  }
+  &__purple{
+    font-weight: 700;
+    color: $programTextColor;
+  }
+  &__btn{
+    background-color: $programTextColor;
+  border: 1px solid $programTextColor;
+  padding: 7px 52px;
+  color: $secondaryTextColor;
+  border-radius: 27px;
+  margin: 0 auto;
+  font-weight: 700;
+font-size: 14px;
+transition: color 500ms ease-in-out, background-color 500ms ease-in-out;
+margin-top: 24px;
+margin-bottom: 25px;
+&:hover{
+  background-color: none;
+  color: $programTextColor;
+}
+  }
+&__already{
+  font-size: 13px;
+color: $secondaryTextColor;
+}
+&__sing-up{
+  font-weight: 700;
+  color: $programTextColor;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+}
+@media screen and (min-width:768px){
+.up{
+min-width: 515px;
+&__form{
+  display: flex;
+  flex-wrap: wrap;
+}
+}  
+}
