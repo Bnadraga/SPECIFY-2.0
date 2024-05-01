@@ -106,6 +106,32 @@ background-color: $cardTextColor;
 transition: transform 1000ms ease-in-out;
   }
 }
+@supports (background-image: url(../img/design/first-card-sm@1x.png)){
+  .design__item-one{
+    background-image: url(../img/design/first-card-sm@1x.png);
+  }
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx){
+    .design__item-one{
+      background-image: url(../img/design/first-card-sm@2x.png);
+    }
+  }
+}
+@supports (background-image: url(../img/design/second-card-sm@1x.png)){
+  .design__item-two{
+    background-image: url(../img/design/second-card-sm@1x.png);
+  }
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx){
+    .design__item-two{
+      background-image: url(../img/design/second-card-sm@2x.png);
+    }
+  }
+}
 @media screen and (min-width:480px){
   .design{
     padding-top: 50px;
@@ -146,6 +172,32 @@ margin: 0 auto;
       background-image: url(../img/design/second-card-mobile@2x.png);
     }
   }
+  @supports (background-image: url(../img/design/first-card-sm@1x.png)){
+    .design__item-one{
+      background-image: url(../img/design/first-card-sm@1x.png);
+    }
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+      .design__item-one{
+        background-image: url(../img/design/first-card-sm@2x.png);
+      }
+    }
+  }
+  @supports (background-image: url(../img/design/second-card-mobile@1x.png)){
+    .design__item-two{
+      background-image: url(../img/design/second-card-mobile@1x.png);
+    }
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+      .design__item-two{
+        background-image: url(../img/design/second-card-mobile@2x.png);
+      }
+    }
+  }
 }
 @media screen and (min-width:768px) {
 .design{
@@ -177,6 +229,32 @@ padding-bottom: 70px;
       background-image: url(../img/design/second-card-tablet@2x.png);
     }
   }
+  @supports (background-image: url(../img/design/first-card-sm@1x.png)){
+    .design__item-one{
+      background-image: url(../img/design/first-card-sm@1x.png);
+    }
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+      .design__item-one{
+        background-image: url(../img/design/first-card-sm@2x.png);
+      }
+    }
+  }
+  @supports (background-image: url(../img/design/second-card-tablet@1x.png)){
+    .design__item-two{
+      background-image: url(../img/design/second-card-tablet@1x.png);
+    }
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+      .design__item-two{
+        background-image: url(../img/design/second-card-tablet@2x.png);
+      }
+    }
+  }
 }
 @media screen and (min-width:1150px){
   .design{
@@ -204,6 +282,32 @@ padding-bottom: 70px;
       .design__item-one{
         background-image: url(../img/design/first-card-desktop@2x.png);
       }
+      .design__item-two{
+        background-image: url(../img/design/second-card-desktop@2x.png);
+      }
+    }
+  }
+  @supports (background-image: url(../img/design/first-card-sm@1x.png)){
+    .design__item-one{
+      background-image: url(../img/design/first-card-sm@1x.png);
+    }
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+      .design__item-one{
+        background-image: url(../img/design/first-card-sm@2x.png);
+      }
+    }
+  }
+  @supports (background-image: url(../img/design/second-card-desktop@1x.png)){
+    .design__item-two{
+      background-image: url(../img/design/second-card-desktop@1x.png);
+    }
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
       .design__item-two{
         background-image: url(../img/design/second-card-desktop@2x.png);
       }
