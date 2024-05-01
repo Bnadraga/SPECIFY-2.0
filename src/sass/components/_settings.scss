@@ -231,6 +231,9 @@
       line-height: 171%;
       margin-bottom: 45px;
     }
+    &:nth-child(2) > .settings__card-text {
+      margin-bottom: 25px;
+    }
   }
   @supports (background-image: url(../img/settings/first-card-mobile@1x.webp)) {
     .settings__card:nth-child(1) {
@@ -327,6 +330,9 @@
     }
     &:nth-child(2) {
       background-image: url(../img/settings/second-card-tablet@1x.png);
+    }
+    &:nth-child(2) > .settings__card-text {
+      margin-bottom: 24px;
     }
   }
   @supports (background-image: url(../img/settings/first-card-tablet@1x.webp)) {

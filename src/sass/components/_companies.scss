@@ -9,6 +9,14 @@
       rgb(21, 23, 24) 34.54727232456207%
     );
     background-repeat: no-repeat;
+    transition: background-image 1550ms ease-in-out;
+    &:hover {
+      background-image: radial-gradient(
+        70.71% 70.71% at 50% 50%,
+        rgb(29, 88, 192) 0%,
+        rgb(21, 23, 24) 100%
+      );
+    }
     &:not(:first-child) {
       display: none;
     }
@@ -18,7 +26,15 @@
         rgb(0, 150, 57) 0%,
         rgb(21, 23, 24) 22.71784394979477%
       );
+      transition: background-image 1550ms ease-in-out;
       background-repeat: no-repeat;
+      &:hover {
+        background: radial-gradient(
+          70.71% 70.71% at 50% 50%,
+          rgb(0, 150, 57) 0%,
+          rgb(21, 23, 24) 100%
+        );
+      }
     }
     &:nth-child(3) {
       background: radial-gradient(
@@ -27,6 +43,14 @@
         rgb(21, 23, 24) 100%
       );
       background-repeat: no-repeat;
+      transition: background-image 1550ms ease-in-out;
+      &:hover {
+        background: radial-gradient(
+          70.71% 70.71% at 50% 50%,
+          rgb(141, 74, 247) 0%,
+          rgb(21, 23, 24) 100%
+        );
+      }
     }
   }
   &__item-first
@@ -36,6 +60,11 @@
     > .companies__subitem
     > .companies__link {
     background-color: $linkCarrefourColor;
+    border: 1px solid $linkCarrefourColor;
+    transition: background-color 250ms ease-in-out;
+    &:hover {
+      background-color: transparent;
+    }
   }
   &__item-second
     > .companies__info-wrap
@@ -44,6 +73,11 @@
     > .companies__subitem
     > .companies__link {
     background-color: $linkNortalColor;
+    border: 1px solid $linkNortalColor;
+    transition: background-color 250ms ease-in-out;
+    &:hover {
+      background-color: transparent;
+    }
   }
   &__item-third
     > .companies__info-wrap
@@ -52,6 +86,11 @@
     > .companies__subitem
     > .companies__link {
     background-color: $linkPitchColor;
+    border: 1px solid $linkPitchColor;
+    transition: background-color 250ms ease-in-out;
+    &:hover {
+      background-color: transparent;
+    }
   }
   &__info-wrap {
     padding: 0 45px;
@@ -116,7 +155,19 @@
     border-radius: 40px;
     border: none;
     background-color: $secondaryTextColor;
+    border: 1px solid $secondaryTextColor;
     margin: 0 auto;
+    transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+    &:hover {
+      background-color: transparent;
+      color: $secondaryTextColor;
+      .companies__btn-icon-wrap {
+        background-color: $secondaryTextColor;
+      }
+      .companies__btn-icon {
+        fill: $cardTextColor;
+      }
+    }
   }
   &__btn-icon-wrap {
     width: 20px;
@@ -127,9 +178,11 @@
     align-items: center;
     justify-content: center;
     margin-left: 8px;
+    transition: background-color 250ms ease-in-out,
   }
   &__btn-icon {
     fill: $secondaryTextColor;
+    transition: fill 250ms ease-in-out,
   }
   &__text-wrap {
     padding: 30px 10px 20px 10px;
