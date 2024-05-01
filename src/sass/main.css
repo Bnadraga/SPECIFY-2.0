@@ -777,20 +777,43 @@ html {
 }
 .companies__item:nth-child(2) {
   background: radial-gradient(139.96% 140.76% at 0.94% 0%, rgb(0, 150, 57) 0%, rgb(21, 23, 24) 22.7178439498%);
+  transition: background-image 1550ms ease-in-out;
   background-repeat: no-repeat;
+}
+.companies__item:nth-child(2):hover {
+  background: radial-gradient(70.71% 70.71% at 50% 50%, rgb(0, 150, 57) 0%, rgb(21, 23, 24) 100%);
 }
 .companies__item:nth-child(3) {
   background: radial-gradient(66.32% 62.4% at -4.06% 16.87%, rgb(141, 74, 247) 0%, rgb(21, 23, 24) 100%);
   background-repeat: no-repeat;
+  transition: background-image 1550ms ease-in-out;
+}
+.companies__item:nth-child(3):hover {
+  background: radial-gradient(70.71% 70.71% at 50% 50%, rgb(141, 74, 247) 0%, rgb(21, 23, 24) 100%);
 }
 .companies__item-first > .companies__info-wrap > .companies__link-wrap > .companies__sublist > .companies__subitem > .companies__link {
   background-color: #1D58C0;
+  border: 1px solid #1D58C0;
+  transition: background-color 250ms ease-in-out;
+}
+.companies__item-first > .companies__info-wrap > .companies__link-wrap > .companies__sublist > .companies__subitem > .companies__link:hover {
+  background-color: transparent;
 }
 .companies__item-second > .companies__info-wrap > .companies__link-wrap > .companies__sublist > .companies__subitem > .companies__link {
   background-color: #009639;
+  border: 1px solid #009639;
+  transition: background-color 250ms ease-in-out;
+}
+.companies__item-second > .companies__info-wrap > .companies__link-wrap > .companies__sublist > .companies__subitem > .companies__link:hover {
+  background-color: transparent;
 }
 .companies__item-third > .companies__info-wrap > .companies__link-wrap > .companies__sublist > .companies__subitem > .companies__link {
   background-color: #8D4AF7;
+  border: 1px solid #8D4AF7;
+  transition: background-color 250ms ease-in-out;
+}
+.companies__item-third > .companies__info-wrap > .companies__link-wrap > .companies__sublist > .companies__subitem > .companies__link:hover {
+  background-color: transparent;
 }
 .companies__info-wrap {
   padding: 0 45px;
@@ -848,7 +871,19 @@ html {
   border-radius: 40px;
   border: none;
   background-color: #ffffff;
+  border: 1px solid #ffffff;
   margin: 0 auto;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+}
+.companies__btn:hover {
+  background-color: transparent;
+  color: #ffffff;
+}
+.companies__btn:hover .companies__btn-icon-wrap {
+  background-color: #ffffff;
+}
+.companies__btn:hover .companies__btn-icon {
+  fill: #151718;
 }
 .companies__btn-icon-wrap {
   width: 20px;
@@ -859,9 +894,11 @@ html {
   align-items: center;
   justify-content: center;
   margin-left: 8px;
+  transition: background-color 250ms ease-in-out;
 }
 .companies__btn-icon {
   fill: #ffffff;
+  transition: fill 250ms ease-in-out;
 }
 .companies__text-wrap {
   padding: 30px 10px 20px 10px;
@@ -1217,6 +1254,9 @@ html {
     line-height: 171%;
     margin-bottom: 45px;
   }
+  .settings__card:nth-child(2) > .settings__card-text {
+    margin-bottom: 25px;
+  }
   @supports (background-image: url(../img/settings/first-card-mobile@1x.webp)) {
     .settings__card:nth-child(1) {
       background-image: url(../img/settings/first-card-mobile@1x.webp);
@@ -1234,7 +1274,7 @@ html {
   }
 }
 @media screen and (min-width: 480px) {
-  @supports (background-image: url(../img/settings/first-card-mobile@1x.webp)) {
+  @supports (background-image: url(../img/settings/second-card-mobile@1x.webp)) {
     .settings__card:nth-child(2) {
       background-image: url(../img/settings/second-card-mobile@1x.webp);
     }
@@ -1301,6 +1341,9 @@ html {
   }
   .settings__card:nth-child(2) {
     background-image: url(../img/settings/second-card-tablet@1x.png);
+  }
+  .settings__card:nth-child(2) > .settings__card-text {
+    margin-bottom: 24px;
   }
   @supports (background-image: url(../img/settings/first-card-tablet@1x.webp)) {
     .settings__card:nth-child(1) {
@@ -1418,27 +1461,18 @@ html {
   letter-spacing: -0.04em;
   color: #ffffff;
   margin-bottom: 15px;
-  text-align: center;
 }
-.team__describe {
+.team__title__describe {
   font-weight: 400;
   font-size: 11px;
   line-height: 218%;
   text-align: center;
-  color: rgba(255, 255, 255, 0.8);
-  max-width: 290px;
-  display: flex;
-  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 15px;
 }
-.team__btn-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.team__btn-item {
-  margin-top: 15px;
-}
-.team__btn-purple {
+.team__title__btn-purple {
+  border: none;
+  cursor: pointer;
   font-weight: 600;
   font-size: 15px;
   line-height: 151%;
