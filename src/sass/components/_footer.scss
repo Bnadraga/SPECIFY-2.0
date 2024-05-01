@@ -7,6 +7,7 @@
   }
   &__logo {
     margin: 0 auto;
+    cursor: pointer;
   }
   &__logo-icon {
     width: 82px;
@@ -46,6 +47,11 @@
     font-size: 14px;
     line-height: 171%;
     color: $mainTextColor;
+    cursor: pointer;
+    transition: color 250ms ease-in-out;
+    &:hover{
+      color: $linkPitchColor;
+    }
   }
   &__new {
     border-radius: 16px;
@@ -71,6 +77,11 @@
     font-size: 12px;
     line-height: 200%;
     color: $mainTextColor;
+    cursor: pointer;
+    transition: color 250ms ease-in-out;
+    &:hover{
+      color: $footerNewBackgroundColor;
+    }
   }
   &__describition {
     margin-top: 5px;
@@ -124,6 +135,7 @@
     }
     &__logos {
       flex-direction: column;
+      align-items: flex-start;
     }
     &__logo {
       margin-bottom: 240px;
