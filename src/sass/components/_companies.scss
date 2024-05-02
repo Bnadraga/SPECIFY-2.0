@@ -166,6 +166,7 @@
       }
       .companies__btn-icon {
         fill: $cardTextColor;
+        transform: rotate(90deg);
       }
     }
   }
@@ -183,6 +184,7 @@
   &__btn-icon {
     fill: $secondaryTextColor;
     transition: fill 250ms ease-in-out,
+    transform .5s ease-in-out
   }
   &__text-wrap {
     padding: 30px 10px 20px 10px;
