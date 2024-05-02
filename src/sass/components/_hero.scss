@@ -9,6 +9,10 @@
   align-items: center;
   margin: 0 auto;
   margin-bottom: 25px;
+  cursor: default;
+}
+.hero__subtitle-wrap:hover .hero__black-point{
+  background-color: $footerNewBackgroundColor;
 }
 .hero__subtitle {
   font-weight: 600;
@@ -26,6 +30,7 @@
   border-radius: 100%;
   background-color: $cardTextColor;
   padding-right: 8px;
+  transition-duration: 350ms;
 }
 .hero__title {
   font-weight: 700;
@@ -38,6 +43,7 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 15px;
+  cursor: default;
 }
 .hero__text {
   font-weight: 400;
@@ -47,6 +53,7 @@
   color: $mainTextColor;
   width: 290px;
   margin: 0 auto;
+  cursor: default;
 }
 .hero__first-button {
   font-weight: 600;
@@ -94,9 +101,13 @@
   background: linear-gradient(180deg, #7c6ce4 0%, #624de3 100%);
   border: 1px solid $borderColor;
 }
+.hero__second-button:hover .hero__arrow{
+  transform: rotate(180deg);
+}
 .hero__arrow {
   fill: $secondaryTextColor;
   margin-left: 8px;
+  transition-duration: 350ms;
 }
 .hero__list-button {
   display: flex;
