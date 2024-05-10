@@ -10,12 +10,12 @@
     color: $secondaryTextColor;
     padding-bottom: 40px;
   }
-  &__list{
+  &__list {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  &__item-one{
+  &__item-one {
     border-radius: 24px;
     background-image: url(../img/design/first-card-sm@1x.png);
     background-size: contain;
@@ -30,13 +30,13 @@
     max-width: 290px;
     // background-color: linear-gradient(180deg, #151718 0%, #2b2f31 100%);
     @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx){
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: url(../img/design/first-card-sm@2x.png);
     }
   }
-  &__item-two{
+  &__item-two {
     padding-top: 30px;
     padding-bottom: 140px;
     padding-left: 10px;
@@ -50,265 +50,268 @@
     margin-bottom: 25px;
     max-width: 290px;
     @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx){
-    background-image: url(../img/design/second-card-sm@2x.png);
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../img/design/second-card-sm@2x.png);
+    }
   }
-  }
-  &__subtitle{
+  &__subtitle {
     font-weight: 600;
-font-size: 20px;
-line-height: 200%;
-letter-spacing: -0.05em;
-color: $secondaryTextColor;
-padding-bottom: 16px;
-text-align: center;
+    font-size: 20px;
+    line-height: 200%;
+    letter-spacing: -0.05em;
+    color: $secondaryTextColor;
+    padding-bottom: 16px;
+    text-align: center;
   }
-  &__text{
+  &__text {
     font-weight: 400;
-font-size: 12px;
-line-height: 167%;
-text-align: center;
-color: $mainTextColor;
-max-width: 270px;
-padding-bottom: 25px;
-margin: 0 auto;
+    font-size: 12px;
+    line-height: 167%;
+    text-align: center;
+    color: $mainTextColor;
+    max-width: 270px;
+    padding-bottom: 25px;
+    margin: 0 auto;
   }
-  &__btn{
+  &__btn {
     border-radius: 40px;
     background-color: $secondaryTextColor;
     padding: 8px 16px;
     border: 1px solid $borderColor;
     font-weight: 600;
-font-size: 15px;
-line-height: 151%;
-color: $cardTextColor;
-display: flex;
-align-items: center;
-margin: 0 auto;
-transition: color 500ms ease-in-out, background-color 500ms ease-in-out;
+    font-size: 15px;
+    line-height: 151%;
+    color: $cardTextColor;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    transition: color 500ms ease-in-out, background-color 500ms ease-in-out;
   }
-  &__btn:hover, &__btn:focus{
-    color: $secondaryTextColor;
+  &__btn:hover,
+  &__btn:focus {
     background-color: transparent;
-    .design__icon{
-      transform: rotate(360deg);
+    color: $secondaryTextColor;
+    .design__icon {
+      fill: $cardTextColor;
+      background-color: $secondaryTextColor;
+      transform: rotate(90deg);
     }
   }
-  &__icon{
+  &__icon {
     border-radius: 16px;
-width: 20px;
-height: 20px;
-margin-left: 8px;
-fill: $secondaryTextColor;
-background-color: $cardTextColor;
-transition: transform 1000ms ease-in-out;
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+    fill: $secondaryTextColor;
+    background-color: $cardTextColor;
+    transition: transform 1000ms ease-in-out, fill 1000ms ease-in-out, background-color 1000ms ease-in-out;
   }
 }
-@supports (background-image: url(../img/design/first-card-sm@1x.png)){
-  .design__item-one{
+@supports (background-image: url(../img/design/first-card-sm@1x.png)) {
+  .design__item-one {
     background-image: url(../img/design/first-card-sm@1x.png);
   }
   @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx){
-    .design__item-one{
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .design__item-one {
       background-image: url(../img/design/first-card-sm@2x.png);
     }
   }
 }
-@supports (background-image: url(../img/design/second-card-sm@1x.png)){
-  .design__item-two{
+@supports (background-image: url(../img/design/second-card-sm@1x.png)) {
+  .design__item-two {
     background-image: url(../img/design/second-card-sm@1x.png);
   }
   @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx){
-    .design__item-two{
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .design__item-two {
       background-image: url(../img/design/second-card-sm@2x.png);
     }
   }
 }
-@media screen and (min-width:480px){
-  .design{
+@media screen and (min-width: 480px) {
+  .design {
     padding-top: 50px;
     padding-bottom: 40px;
-    &__item-one{
+    &__item-one {
       background-image: url(../img/design/first-card-mobile@1x.png);
       max-width: 354px;
     }
-    &__item-two{
+    &__item-two {
       background-image: url(../img/design/second-card-mobile@1x.png);
       max-width: 354px;
     }
-    &__title{
+    &__title {
       font-size: 36px;
-line-height: 156%;
-letter-spacing: -0.03em;
+      line-height: 156%;
+      letter-spacing: -0.03em;
     }
-    &__subtitle{
+    &__subtitle {
       font-size: 24px;
-line-height: 167%;
-letter-spacing: -0.04em;
+      line-height: 167%;
+      letter-spacing: -0.04em;
     }
-    &__text{
+    &__text {
       font-size: 16px;
-line-height: 150%;
-max-width: 324px;
-margin: 0 auto;
+      line-height: 150%;
+      max-width: 324px;
+      margin: 0 auto;
     }
   }
   @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx){
-    .design__item-one{
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .design__item-one {
       background-image: url(../img/design/first-card-mobile@2x.png);
     }
-    .design__item-two{
+    .design__item-two {
       background-image: url(../img/design/second-card-mobile@2x.png);
     }
   }
-  @supports (background-image: url(../img/design/first-card-sm@1x.png)){
-    .design__item-one{
+  @supports (background-image: url(../img/design/first-card-sm@1x.png)) {
+    .design__item-one {
       background-image: url(../img/design/first-card-sm@1x.png);
     }
     @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx){
-      .design__item-one{
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .design__item-one {
         background-image: url(../img/design/first-card-sm@2x.png);
       }
     }
   }
-  @supports (background-image: url(../img/design/second-card-mobile@1x.png)){
-    .design__item-two{
+  @supports (background-image: url(../img/design/second-card-mobile@1x.png)) {
+    .design__item-two {
       background-image: url(../img/design/second-card-mobile@1x.png);
     }
     @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx){
-      .design__item-two{
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .design__item-two {
         background-image: url(../img/design/second-card-mobile@2x.png);
       }
     }
   }
 }
-@media screen and (min-width:768px) {
-.design{
-  &__title{
-    font-size: 48px;
-line-height: 117%;
-letter-spacing: -0.02em;
-padding-bottom: 70px;
+@media screen and (min-width: 768px) {
+  .design {
+    &__title {
+      font-size: 48px;
+      line-height: 117%;
+      letter-spacing: -0.02em;
+      padding-bottom: 70px;
+    }
+    &__list {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    &__item-one {
+      background-image: url(../img/design/first-card-tablet@1x.png);
+    }
+    &__item-two {
+      background-image: url(../img/design/second-card-tablet@1x.png);
+    }
   }
-&__list{
-  flex-direction: row;
-  justify-content: space-around;
-}
-&__item-one{
-  background-image: url(../img/design/first-card-tablet@1x.png);
-}
-&__item-two{
-  background-image: url(../img/design/second-card-tablet@1x.png);
-}
-}  
-@media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx){
-    .design__item-one{
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .design__item-one {
       background-image: url(../img/design/first-card-tablet@2x.png);
     }
-    .design__item-two{
+    .design__item-two {
       background-image: url(../img/design/second-card-tablet@2x.png);
     }
   }
-  @supports (background-image: url(../img/design/first-card-sm@1x.png)){
-    .design__item-one{
+  @supports (background-image: url(../img/design/first-card-sm@1x.png)) {
+    .design__item-one {
       background-image: url(../img/design/first-card-sm@1x.png);
     }
     @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx){
-      .design__item-one{
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .design__item-one {
         background-image: url(../img/design/first-card-sm@2x.png);
       }
     }
   }
-  @supports (background-image: url(../img/design/second-card-tablet@1x.png)){
-    .design__item-two{
+  @supports (background-image: url(../img/design/second-card-tablet@1x.png)) {
+    .design__item-two {
       background-image: url(../img/design/second-card-tablet@1x.png);
     }
     @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx){
-      .design__item-two{
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .design__item-two {
         background-image: url(../img/design/second-card-tablet@2x.png);
       }
     }
   }
 }
-@media screen and (min-width:1150px){
-  .design{
+@media screen and (min-width: 1150px) {
+  .design {
     padding-top: 159px;
     padding-bottom: 80px;
-    &__title{
+    &__title {
       padding-bottom: 80px;
     }
-    &__list{
+    &__list {
       justify-content: center;
     }
-    &__item-one{
+    &__item-one {
       background-image: url(../img/design/first-card-desktop@1x.png);
       max-width: 552px;
       margin-right: 16px;
     }
-    &__item-two{
+    &__item-two {
       background-image: url(../img/design/second-card-desktop@1x.png);
       max-width: 552px;
     }
     @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx){
-      .design__item-one{
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .design__item-one {
         background-image: url(../img/design/first-card-desktop@2x.png);
       }
-      .design__item-two{
+      .design__item-two {
         background-image: url(../img/design/second-card-desktop@2x.png);
       }
     }
   }
-  @supports (background-image: url(../img/design/first-card-sm@1x.png)){
-    .design__item-one{
+  @supports (background-image: url(../img/design/first-card-sm@1x.png)) {
+    .design__item-one {
       background-image: url(../img/design/first-card-sm@1x.png);
     }
     @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx){
-      .design__item-one{
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .design__item-one {
         background-image: url(../img/design/first-card-sm@2x.png);
       }
     }
   }
-  @supports (background-image: url(../img/design/second-card-desktop@1x.png)){
-    .design__item-two{
+  @supports (background-image: url(../img/design/second-card-desktop@1x.png)) {
+    .design__item-two {
       background-image: url(../img/design/second-card-desktop@1x.png);
     }
     @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx){
-      .design__item-two{
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .design__item-two {
         background-image: url(../img/design/second-card-desktop@2x.png);
       }
     }

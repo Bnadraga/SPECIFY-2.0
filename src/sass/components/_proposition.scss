@@ -25,13 +25,14 @@
     color: $secondaryTextColor;
     box-shadow: inset 0 2px 0 0 rgba(255, 255, 255, 0.2),
       inset 0 -1px 0 1px rgba(0, 0, 0, 0.25), 0 2px 6px 0 rgba(0, 0, 0, 0.1);
-    background: linear-gradient(180deg, #7c6ce4 0%, #624de3 100%);
+    background-image: linear-gradient(180deg, #7c6ce4 0%, #624de3 100%);
     border: 1px solid $footerNewBackgroundColor;
     padding: 12px 20px;
     border-radius: 8px;
-    transition: color 500ms ease-in-out, background 500ms ease-in-out;
+    transition: color 500ms ease-in-out, background-image 500ms ease-in-out;
     &:hover{
-      background: transparent;
+      background-image: none;
+      background-color: $cardTextColor;
       color: $linkPitchColor;
     }
   }
@@ -101,7 +102,6 @@
   }
   &__close-btn {
     margin-top: 20px;
-    margin-right: 20px;
     background-color: transparent;
     border: none;
   }
@@ -133,9 +133,14 @@
   }
   &__label{
     margin-bottom: 18px;
+    position: relative;
+  }
+  &__checkbox{
+    display: flex;
+    align-items: center;
   }
   &__input {
-    min-width: 260px;
+    min-width: 230px;
     min-height: 40px;
     border: 1px solid $secondaryTextColor;
     border-radius: 5px;
@@ -154,23 +159,23 @@
     width: 15px;
     height: 15px;
     fill: $secondaryTextColor;
-    margin-right: 13px;
+    // margin-right: 20px;
     position: absolute;
-    top: 250px;
-    right: 80px;
+    top: 13px;
+    right: 15px;
   }
   &__eye-two{
     width: 15px;
     height: 15px;
     fill: $secondaryTextColor;
-    margin-right: 13px;
     position: absolute;
-    top: 308px;
-    right: 80px;
+    top: 13px;
+    right: 15px;
   }
   &__checkbox-input{
-    background-color: transparent;
+    background-color: $cardTextColor;
     cursor: pointer;
+    margin-right: 10px;
   }
   &__confidiration{
     font-size: 12px;
@@ -198,7 +203,7 @@ transition: color 500ms ease-in-out, background-color 500ms ease-in-out;
 margin-top: 24px;
 margin-bottom: 25px;
 &:hover{
-  background-color: none;
+  background-color: transparent;
   color: $programTextColor;
 }
   }
@@ -219,8 +224,9 @@ justify-content: center;
 }
 @media screen and (min-width:768px){
 .up{
-width: 700px;
+width: 515px;
 height: 360px;
+padding: 0 20px;
 &__title{
   max-width: 100%;
 }
@@ -228,20 +234,16 @@ height: 360px;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
-&__label{
-  margin-right: 7px;
-  margin-left: 7px;
-}
-&__eye-one{
-  top: 165px;
-  right: 358px;
-}
-&__eye-two{
-  top: 165px;
-  right: 80px;
-}
+// &__eye-one{
+//   top: 165px;
+//   right: 358px;
+// }
+// &__eye-two{
+//   top: 165px;
+//   right: 80px;
+// }
 &__btn{
   margin-top: 40px;
 }
