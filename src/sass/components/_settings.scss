@@ -145,7 +145,7 @@
     align-items: center;
     padding: 8px 8px 8px 16px;
     margin: 0 auto;
-    transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+    transition: background-color 500ms ease-in-out, color 500ms ease-in-out;
     border: 1px solid $secondaryTextColor;
     &:hover {
       background-color: transparent;
@@ -162,7 +162,7 @@
     border-radius: 50%;
     fill: $secondaryTextColor;
     margin-left: 8px;
-    transition: background-color 250ms ease-in-out, fill 250ms ease-in-out, transform .5s ease-in-out;
+    transition: background-color 500ms ease-in-out, fill 500ms ease-in-out, transform 500ms ease-in-out;
   }
 }
 @supports (background-image: url(../img/settings/first-card-sm@1x.webp)) {
