@@ -106,7 +106,8 @@
     margin-left: 8px;
     fill: $secondaryTextColor;
     background-color: $cardTextColor;
-    transition: transform 1000ms ease-in-out, fill 1000ms ease-in-out, background-color 1000ms ease-in-out;
+    transition: transform 1000ms ease-in-out, fill 1000ms ease-in-out,
+      background-color 1000ms ease-in-out;
   }
 }
 @supports (background-image: url(../img/design/first-card-sm@1x.png)) {
@@ -273,10 +274,28 @@
       background-image: url(../img/design/first-card-desktop@1x.png);
       max-width: 552px;
       margin-right: 16px;
+      padding: 40px;
+      padding-top: 64px;
+      padding-bottom: 280px;
     }
     &__item-two {
       background-image: url(../img/design/second-card-desktop@1x.png);
       max-width: 552px;
+      padding: 40px;
+      padding-top: 64px;
+      padding-bottom: 280px;
+    }
+    &__subtitle {
+      font-weight: 600;
+      font-size: 31px;
+      line-height: 125%;
+      letter-spacing: -0.03em;
+    }
+    &__text {
+      margin: 0 auto;
+      font-size: 20px;
+      line-height: 160%;
+      max-width: 472px;
     }
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
