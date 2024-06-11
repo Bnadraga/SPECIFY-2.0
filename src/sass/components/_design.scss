@@ -86,8 +86,8 @@
     display: flex;
     align-items: center;
     margin: 0 auto;
-    transition: background-image 250ms ease-in-out, box-shadow 250ms ease-in-out,
-      background-color 250ms ease-in-out;
+    transition: background-image 500ms ease-in-out, box-shadow 500ms ease-in-out,
+      background-color 500ms ease-in-out;
   }
   &__btn:hover,
   &__btn:focus {
@@ -106,8 +106,8 @@
     margin-left: 8px;
     fill: $secondaryTextColor;
     background-color: $cardTextColor;
-    transition: background-color 25ms ease-in-out, fill 250ms ease-in-out,
-      transform 250ms ease-in-out;
+    transition: background-color 500ms ease-in-out, fill 500ms ease-in-out,
+      transform 500ms ease-in-out;
   }
 }
 @supports (background-image: url(../img/design/first-card-sm@1x.png)) {
