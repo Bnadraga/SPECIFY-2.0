@@ -26,14 +26,14 @@
     box-shadow: inset 0 2px 0 0 rgba(255, 255, 255, 0.2),
       inset 0 -1px 0 1px rgba(0, 0, 0, 0.25), 0 2px 6px 0 rgba(0, 0, 0, 0.1);
     background-image: linear-gradient(180deg, #7c6ce4 0%, #624de3 100%);
-    border: 1px solid $footerNewBackgroundColor;
+    border: 1px solid $borderColor;
     padding: 12px 20px;
     border-radius: 8px;
     transition: color 500ms ease-in-out, background-image 500ms ease-in-out;
-    &:hover{
+    &:hover, &:focus{
       background-image: none;
       background-color: $cardTextColor;
-      color: $linkPitchColor;
+      box-shadow: none;
     }
   }
 }
@@ -159,7 +159,6 @@
     width: 15px;
     height: 15px;
     fill: $secondaryTextColor;
-    // margin-right: 20px;
     position: absolute;
     top: 13px;
     right: 15px;
@@ -185,6 +184,9 @@
   &__purple{
     font-weight: 700;
     color: $programTextColor;
+    &:hover, &:focus{
+text-decoration: underline;
+    }
   }
   &__btn-wrap{
     display: flex;
