@@ -106,8 +106,8 @@
     margin-left: 8px;
     fill: $secondaryTextColor;
     background-color: $cardTextColor;
-    transition: background-color 500ms ease-in-out, fill 500ms ease-in-out,
-      transform 500ms ease-in-out;
+    transition: background-color 25ms ease-in-out, fill 250ms ease-in-out,
+      transform 250ms ease-in-out;
   }
 }
 @supports (background-image: url(../img/design/first-card-sm@1x.png)) {

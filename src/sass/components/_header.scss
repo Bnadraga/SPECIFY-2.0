@@ -326,6 +326,10 @@
   font-size: 13px;
   color: $programTextColor;
   margin-left: 5px;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
 }
 .modal__text-wrap {
   display: flex;

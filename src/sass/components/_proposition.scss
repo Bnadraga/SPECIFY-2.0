@@ -30,7 +30,8 @@
     padding: 12px 20px;
     border-radius: 8px;
     transition: color 500ms ease-in-out, background-image 500ms ease-in-out;
-    &:hover, &:focus{
+    &:hover,
+    &:focus {
       background-image: none;
       background-color: $cardTextColor;
       box-shadow: none;
@@ -80,7 +81,7 @@
   visibility: hidden;
   pointer-events: none;
 }
-.backdrop.is-hidden .up{
+.backdrop.is-hidden .up {
   transform: translate(-50%, -50%) scale(0);
 }
 .up {
@@ -111,8 +112,8 @@
     fill: $secondaryTextColor;
     transition: fill 500ms ease-in-out;
   }
-  &__close-btn:hover{
-    .up__close-icon{
+  &__close-btn:hover {
+    .up__close-icon {
       fill: $footerNewBackgroundColor;
     }
   }
@@ -131,11 +132,11 @@
     flex-direction: column;
     align-items: center;
   }
-  &__label{
+  &__label {
     margin-bottom: 18px;
     position: relative;
   }
-  &__checkbox{
+  &__checkbox {
     display: flex;
     align-items: center;
   }
@@ -155,7 +156,7 @@
     padding-left: 15px;
     padding-right: 185px;
   }
-  &__eye-one{
+  &__eye-one {
     width: 15px;
     height: 15px;
     fill: $secondaryTextColor;
@@ -163,7 +164,7 @@
     top: 13px;
     right: 15px;
   }
-  &__eye-two{
+  &__eye-two {
     width: 15px;
     height: 15px;
     fill: $secondaryTextColor;
@@ -171,83 +172,84 @@
     top: 13px;
     right: 15px;
   }
-  &__checkbox-input{
+  &__checkbox-input {
     background-color: $cardTextColor;
     cursor: pointer;
     margin-right: 10px;
   }
-  &__confidiration{
+  &__confidiration {
     font-size: 12px;
     color: $secondaryTextColor;
     padding-right: 10px;
   }
-  &__purple{
+  &__purple {
     font-weight: 700;
     color: $programTextColor;
-    &:hover, &:focus{
-text-decoration: underline;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
     }
   }
-  &__btn-wrap{
+  &__btn-wrap {
     display: flex;
     justify-content: center;
   }
-  &__btn{
+  &__btn {
     background-color: $programTextColor;
-  border: 1px solid $programTextColor;
-  padding: 7px 52px;
-  color: $secondaryTextColor;
-  border-radius: 27px;
-  margin: 0 auto;
-  font-weight: 700;
-font-size: 14px;
-transition: color 500ms ease-in-out, background-color 500ms ease-in-out;
-margin-top: 24px;
-margin-bottom: 25px;
-&:hover{
-  background-color: transparent;
-  color: $programTextColor;
-}
+    border: 1px solid $programTextColor;
+    padding: 7px 52px;
+    color: $secondaryTextColor;
+    border-radius: 27px;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 14px;
+    transition: color 500ms ease-in-out, background-color 500ms ease-in-out;
+    margin-top: 24px;
+    margin-bottom: 25px;
+    &:hover {
+      background-color: transparent;
+      color: $programTextColor;
+    }
   }
-&__already{
-  font-size: 13px;
-color: $secondaryTextColor;
-display: flex;
-justify-content: center;
-}
-&__sing-up{
-  font-weight: 700;
-  color: $programTextColor;
-  padding-left: 5px;
-  &:hover{
-    text-decoration: underline;
+  &__already {
+    font-size: 13px;
+    color: $secondaryTextColor;
+    display: flex;
+    justify-content: center;
+  }
+  &__sing-up {
+    font-weight: 700;
+    color: $programTextColor;
+    padding-left: 5px;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
-}
-@media screen and (min-width:768px){
-.up{
-width: 515px;
-height: 360px;
-padding: 0 20px;
-&__title{
-  max-width: 100%;
-}
-&__form{
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-// &__eye-one{
-//   top: 165px;
-//   right: 358px;
-// }
-// &__eye-two{
-//   top: 165px;
-//   right: 80px;
-// }
-&__btn{
-  margin-top: 40px;
-}
-}  
+@media screen and (min-width: 768px) {
+  .up {
+    width: 515px;
+    height: 360px;
+    padding: 0 20px;
+    &__title {
+      max-width: 100%;
+    }
+    &__form {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+    // &__eye-one{
+    //   top: 165px;
+    //   right: 358px;
+    // }
+    // &__eye-two{
+    //   top: 165px;
+    //   right: 80px;
+    // }
+    &__btn {
+      margin-top: 40px;
+    }
+  }
 }
