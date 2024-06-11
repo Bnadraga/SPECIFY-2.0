@@ -28,7 +28,6 @@
     border: 1px solid $borderColor;
     margin-bottom: 25px;
     max-width: 290px;
-    // background-color: linear-gradient(180deg, #151718 0%, #2b2f31 100%);
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -79,7 +78,7 @@
     border-radius: 40px;
     background-color: $secondaryTextColor;
     padding: 8px 16px;
-    border: 1px solid $borderColor;
+    border: 1px solid $buttonBorderColor;
     font-weight: 600;
     font-size: 15px;
     line-height: 151%;
@@ -87,7 +86,8 @@
     display: flex;
     align-items: center;
     margin: 0 auto;
-    transition: color 500ms ease-in-out, background-color 500ms ease-in-out;
+    transition: background-image 250ms ease-in-out, box-shadow 250ms ease-in-out,
+      background-color 250ms ease-in-out;
   }
   &__btn:hover,
   &__btn:focus {
@@ -106,8 +106,8 @@
     margin-left: 8px;
     fill: $secondaryTextColor;
     background-color: $cardTextColor;
-    transition: transform 1000ms ease-in-out, fill 1000ms ease-in-out,
-      background-color 1000ms ease-in-out;
+    transition: background-color 500ms ease-in-out, fill 500ms ease-in-out,
+      transform 500ms ease-in-out;
   }
 }
 @supports (background-image: url(../img/design/first-card-sm@1x.png)) {
